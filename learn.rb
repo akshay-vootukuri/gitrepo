@@ -18,12 +18,6 @@ file '/var/www/html/index.html' do
 end
 
 file '/etc/motd' do
-	content 'welcome to my server'
+	content 'welcome to Akshay Reddy server'
 end
-
-execute 'command-test' do
-	command 'echo blah >> /etc/motd'
-	only_if 'test -r /etc/motd'
-end
-
 
